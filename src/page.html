@@ -10,7 +10,30 @@
 		<div class="wrapper">
 			@include('./assets/components/header/header.html')
 			<main class="main">
-				<!-- @include('./assets/components/hero/hero.html') -->
+				<div class="hero page-hero">
+					<div class="hero__inner">
+						<div class="hero__top">
+							<img
+								width="325"
+								height="57"
+								src="./assets/img/svg/logo.svg"
+								alt="Trust Pharmacy"
+								class="hero__logo"
+							/>
+							<div class="hero__links">
+								<a href="tel:+17184879792" class="phone-link">
+									<span class="text-red">Toll-Free phone:</span>
+									<span>+1 718 487 9792</span>
+								</a>
+								<a href="tel:+17184879792" class="phone-link">
+									<span class="text-red">Customer support email:</span>
+									<span>+1 718 487 9792</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				@include('./assets/components/section-info/section-info.html')
 			</main>
 			@include('./assets/components/footer/footer.html')

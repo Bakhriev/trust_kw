@@ -148,3 +148,25 @@
 	&__subtitle {
 	}
 }
+
+//
+.page-hero {
+	padding-bottom: 40px;
+	position: relative;
+
+	.hero__top {
+		margin: 0 auto;
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+
+			bottom: -40px;
+			right: -230px;
+			width: 237px;
+			height: 227px;
+			background: url("../img/page-girl.png") no-repeat center/cover;
+		}
+	}
+}
