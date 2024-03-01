@@ -137,3 +137,60 @@ body {
 .custom-scroll::-webkit-scrollbar-thumb {
 	box-shadow: inset 0 0 6px var(--red);
 }
+
+// Global Styles for typography
+
+h1 {
+	font-family: var(--second-family);
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1.3;
+	color: #1f1f1f;
+}
+
+h2 {
+	font-family: var(--second-family);
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.30556;
+	color: #1f1f1f;
+}
+
+h3 {
+	font-family: var(--second-family);
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 1.3125;
+	color: #1f1f1f;
+}
+
+h4 {
+	font-family: var(--second-family);
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 1.3;
+	color: #1f1f1f;
+}
+
+h5 {
+	font-family: var(--second-family);
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.3;
+	color: #1f1f1f;
+}
+
+h6 {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #1f1f1f;
+}
+
+p {
+	font-family: var(--font-family);
+	font-weight: 300;
+	font-size: 16px;
+	color: #585858;
+}
