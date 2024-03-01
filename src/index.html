@@ -9,7 +9,64 @@
 	<body>
 		<div class="wrapper">
 			@include('./assets/components/header/header.html')
-			<main class="main">@include('./assets/components/hero/hero.html')</main>
+			<main class="main">
+				@include('./assets/components/hero/hero.html')
+				<section class="section-products">
+					<div class="section-products__container container">
+						@include('./assets/components/products/products.html')
+						<div class="search-block">
+							<div class="search-block__list custom-scroll">
+								<a href="#" class="search-product">
+									<span class="search-product__name">Zithromax</span>
+									<span class="search-product__price">$1.23</span>
+								</a>
+								<a href="#" class="search-product search-product_active">
+									<span class="search-product__name">Cenforce</span>
+									<span class="search-product__price">$1.30</span>
+								</a>
+								<a href="#" class="search-product">
+									<span class="search-product__name">Kamara</span>
+									<span class="search-product__price">$1.42</span>
+								</a>
+								<a href="#" class="search-product">
+									<span class="search-product__name">Plaquenil</span>
+									<span class="search-product__price">$0.94</span>
+								</a>
+								<a href="#" class="search-product">
+									<span class="search-product__name">Prednisolone</span>
+									<span class="search-product__price">$0.35</span>
+								</a>
+								<!--  -->
+								<!--  -->
+								<a href="#" class="search-product">
+									<span class="search-product__name">Zithromax</span>
+									<span class="search-product__price">$1.23</span>
+								</a>
+								<a href="#" class="search-product">
+									<span class="search-product__name">Zithromax</span>
+									<span class="search-product__price">$1.23</span>
+								</a>
+							</div>
+							<form action="#" class="search-form">
+								<input
+									type="text"
+									class="search-form__input"
+									placeholder="Search by name..."
+								/>
+								<button
+									aria-label="start search"
+									class="search-form__btn btn-reset"
+									type="submit"
+								>
+									<svg class="search-form__icon">
+										<use href="./assets/img/svg/sprite.svg#search"></use>
+									</svg>
+								</button>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
 			@include('./assets/components/footer/footer.html')
 		</div>
 
