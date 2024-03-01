@@ -16,15 +16,6 @@
 	border-radius: 4px;
 	background-color: #fff;
 
-	// @media screen and (max-width: 768px) {
-	// 	padding: 16px;
-	// 	grid-template-columns: 1fr;
-	// }
-	// @media screen and (max-width: 441px) {
-	// 	grid-template-columns: 104px 1fr;
-	// 	padding: 24px 20px;
-	// }
-
 	&__img {
 		background-color: #ebebeb;
 		border-radius: 4px;
@@ -139,7 +130,7 @@
 //
 
 .section-products {
-	padding: 140px 0;
+	padding-top: 40px;
 	background-color: #f5f5f5;
 	&__container {
 		display: grid;
@@ -186,10 +177,6 @@
 				padding: 4px 20px;
 			}
 		}
-		// @media screen and (max-width: 441px) {
-		// 	grid-template-columns: 104px 1fr;
-		// 	padding: 24px 20px;
-		// }
 	}
 }
 
