@@ -2,9 +2,16 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 16px;
+	align-items: flex-start;
+	.product-card {
+		max-width: 100%;
+		width: 100%;
+	}
 }
 
 .product-card {
+	max-width: 365px;
+	width: 100%;
 	font-family: var(--font-family);
 
 	display: grid;
@@ -136,6 +143,7 @@
 		display: grid;
 		grid-template-columns: 1fr 362px;
 		gap: 16px;
+		align-items: flex-start;
 		@media screen and (max-width: 1160px) {
 			grid-template-columns: 1fr 260px;
 			.product-card {
@@ -190,7 +198,13 @@
 		height: 360px;
 		overflow-y: auto;
 		overflow-x: hidden;
-		margin-bottom: 20px;
+		margin-bottom: 53px;
+		@media screen and (max-width: 1160px) {
+			margin-bottom: 13px;
+		}
+		@media screen and (max-width: 768px) {
+			margin-bottom: 40px;
+		}
 	}
 }
 
