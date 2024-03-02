@@ -123,28 +123,6 @@
 }
 
 .menu-link {
-	font: inherit;
-	font-weight: 500;
-	font-size: 14px;
-	text-transform: uppercase;
-	color: var(--gray);
-	text-decoration: none;
-	transition: color 150ms ease-in-out;
-	@include hover {
-		color: #f06536;
-	}
-
-	&_primary {
-		display: block;
-		padding: 25px 24px;
-		background: linear-gradient(211deg, #e25f32 0%, #d34e20 100%);
-		color: var(--white);
-		transition: scale 100ms ease-in-out;
-		@include hover {
-			scale: 0.97;
-			color: var(--white);
-		}
-	}
 }
 
 .menu-item-has-children:not(:has(:hover)) > .sub-menu {
@@ -207,6 +185,35 @@
 	text-transform: uppercase;
 	color: #818181;
 	cursor: pointer;
+
+	a {
+		font: inherit;
+		font-weight: 500;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: var(--gray);
+		text-decoration: none;
+		transition: color 150ms ease-in-out;
+		@include hover {
+			color: #f06536;
+		}
+	}
+
+	&_primary {
+		@include hover {
+			a {
+				scale: 0.97;
+				color: var(--white);
+			}
+		}
+		a {
+			display: block;
+			padding: 25px 24px;
+			background: linear-gradient(211deg, #e25f32 0%, #d34e20 100%);
+			color: var(--white);
+			transition: scale 100ms ease-in-out;
+		}
+	}
 }
 
 .menu-item-has-children:hover > .sub-menu {

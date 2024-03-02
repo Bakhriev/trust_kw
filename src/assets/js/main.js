@@ -1,9 +1,7 @@
 const overlay = document.querySelector(".overlay")
 const menuBtn = document.querySelector(".menu-toggle")
 const menuCloseBtn = document.querySelector(".menu-close-btn")
-
 const submenus = document.querySelectorAll(".sub-menu")
-
 const menu = document.querySelector(".header__nav")
 
 document.addEventListener("click", e => {
