@@ -8,6 +8,7 @@ const menu = document.querySelector(".header__nav")
 
 document.addEventListener("click", e => {
 	if (e.target.closest(".menu-item-has-children")) {
+		submenus.forEach(s => s.classList.remove("active"))
 		e.target
 			.closest(".menu-item-has-children")
 			.querySelector(".sub-menu")
