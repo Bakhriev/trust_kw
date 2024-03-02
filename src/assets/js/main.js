@@ -2,7 +2,20 @@ const overlay = document.querySelector(".overlay")
 const menuBtn = document.querySelector(".menu-toggle")
 const menuCloseBtn = document.querySelector(".menu-close-btn")
 
+const submenus = document.querySelectorAll(".sub-menu")
+
 const menu = document.querySelector(".header__nav")
+
+document.addEventListener("click", e => {
+	if (e.target.closest(".menu-item-has-children")) {
+		e.target
+			.closest(".menu-item-has-children")
+			.querySelector(".sub-menu")
+			.classList.toggle("active")
+	} else {
+		submenus.forEach(s => s.classList.remove("active"))
+	}
+})
 
 menuBtn.addEventListener("click", () => {
 	menu.classList.add("active")

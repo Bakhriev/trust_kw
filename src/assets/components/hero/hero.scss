@@ -1,9 +1,31 @@
 .hero {
-	padding: 40px 0;
 	background: linear-gradient(180deg, #f4f4f4 0%, #e2e2e2 100%);
-	&__inner {
-	}
+}
 
+//
+.page-hero {
+	padding: 40px 0;
+
+	position: relative;
+
+	.hero__top {
+		margin: 0 auto;
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+
+			bottom: -40px;
+			right: -230px;
+			width: 237px;
+			height: 227px;
+			background: url("../img/page-girl.png") no-repeat center/cover;
+		}
+	}
+}
+
+.hero {
 	&__top {
 		max-width: 846px;
 		padding: 0 20px;
@@ -42,75 +64,6 @@
 		}
 	}
 
-	&__middle {
-		display: none !important;
-		position: relative;
-		max-width: 836px;
-		padding: 0 15px;
-		margin: 0 auto;
-		background: linear-gradient(
-			90deg,
-			rgba(255, 255, 255, 0.01),
-			rgb(255, 255, 255) 15%,
-			rgb(255, 255, 255) 84.5%,
-			rgba(255, 255, 255, 0) 100%
-		);
-		border-top: 1px solid var(--red);
-		border-bottom: 1px solid var(--red);
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding-top: 25px;
-		padding-bottom: 13px;
-		margin-bottom: 42px;
-		@media screen and (max-width: 768px) {
-			align-items: flex-start;
-			&::after {
-				content: "";
-				position: absolute;
-				bottom: 0;
-				right: 0;
-				width: 225px;
-				height: 282px;
-				background: url("../img/hero-girl.png") no-repeat center/cover;
-				@media screen and (max-width: 514px) {
-					width: 186px;
-					height: 233px;
-				}
-			}
-		}
-	}
-
-	&__middle-inner {
-	}
-
-	&__tablets {
-		position: relative;
-		z-index: 1;
-		margin-bottom: 25px;
-		@media screen and (max-width: 514px) {
-			width: 262px;
-			height: 61px;
-		}
-	}
-
-	&__price-wrapper {
-		position: relative;
-		z-index: 1;
-		display: flex;
-		align-items: center;
-		gap: 25px;
-		justify-content: center;
-	}
-
-	&__price {
-		font-family: var(--font-family);
-		font-weight: 500;
-		font-size: 20px;
-		text-transform: uppercase;
-		color: var(--black-100);
-	}
-
 	&__link {
 		display: block;
 		padding: 10px 34px;
@@ -145,57 +98,4 @@
 	}
 }
 
-.advantage-item {
-	display: flex;
-	align-items: center;
-	gap: 16px;
-	&__img-wrapper {
-		width: 65px;
-		height: 43px;
-		display: grid;
-		place-items: center;
-	}
-	&__img {
-	}
-
-	&__info {
-		font-family: var(--font-family);
-	}
-
-	&__title {
-		margin-bottom: 5px;
-		font-weight: 500;
-		font-size: 16px;
-		text-transform: uppercase;
-		color: #797977;
-	}
-
-	&__subtitle {
-		font-weight: 400;
-		font-size: 13px;
-		text-transform: uppercase;
-		color: #f06536;
-	}
-}
-
 //
-.page-hero {
-	padding-bottom: 40px;
-	position: relative;
-
-	.hero__top {
-		margin: 0 auto;
-		position: relative;
-
-		&::after {
-			content: "";
-			position: absolute;
-
-			bottom: -40px;
-			right: -230px;
-			width: 237px;
-			height: 227px;
-			background: url("../img/page-girl.png") no-repeat center/cover;
-		}
-	}
-}

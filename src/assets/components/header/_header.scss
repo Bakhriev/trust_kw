@@ -1,7 +1,6 @@
 .header {
 	background: linear-gradient(180deg, #f4f4f4 0%, #e2e2e2 100%);
 	&__container {
-		max-width: 846px;
 		margin: 0 auto;
 		padding: 0 20px;
 		margin-top: 32px;
@@ -209,6 +208,12 @@
 	opacity: 1;
 	visibility: visible;
 }
+
+.sub-menu.active {
+	opacity: 1;
+	visibility: visible;
+}
+
 .menu-close-btn {
 	display: none;
 }
